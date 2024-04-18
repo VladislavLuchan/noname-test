@@ -1,0 +1,58 @@
+.auth {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  &__form {
+    width: 350px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+    label {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .auth__error {
+    color: #D20062;
+    font-size: 12px;
+    max-width: 250px;
+    margin-bottom: 15px;
+    text-align: left;
+    align-self: flex-start;
+    margin-top: -2px;
+  }
+  
+  input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+  }
+
+  input[type="submit"] {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: #3b5998;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+}
